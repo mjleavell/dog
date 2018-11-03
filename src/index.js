@@ -1,8 +1,11 @@
 import $ from 'jquery';
 import 'bootstrap';
 import './index.scss';
-
+import dogPhoto from './images/dogsrules.jpg';
 import getDogs from './dogGetter';
+
+// HOW TO IMPORT PHOTOS TO HTML
+$('#dogPhoto').attr('src', dogPhoto);
 
 const createDogCards = (dogs) => {
   let newString = '';
